@@ -28,6 +28,9 @@ Descargar las imagenes del carrusel de mayor width
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  color: #fdf3cc;
+  font-size: 2.4rem;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -35,19 +38,75 @@ html {
 }
 
 body {
-  font-size: 2rem;
-  font-family: "Roboto", sans-serif;
+  background-image: url("../img/Background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
+/* text style*/
+.title1 {
+  margin-top: 12rem;
+  font-size: 10rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.title2 {
+  margin: 5rem;
+  font-size: 6.4rem;
+  font-weight: bold;
+  color: #8bab6a;
+  text-align: center;
+}
+
+.title3 {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.mainParagraph {
+  text-shadow: 2px 2px 4px black;
+  margin-bottom: 2rem;
+}
+
+.secondaryParagraph {
+  font-size: 2rem;
+}
+
+.importantWord {
+  font-weight: 900;
+}
 /* Header style*/
 nav {
-  height: 20vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
 }
-.NavBarOptions {
-  padding-top: 4rem;
+.NavBarBg {
+  position: absolute;
+  top: 0px;
+  min-height: 250px;
+  z-index: 2;
 }
 
-nav a img {
+#home {
+  position: absolute;
+  top: 3rem;
+  z-index: 4;
+}
+
+.NavBarOptions img {
   width: 18rem;
   height: 15rem;
   padding: 0.5rem 1rem;
@@ -56,7 +115,7 @@ nav a img {
 
 .NavBarOptions a {
   padding: 0.8rem 1.2rem;
-  background-color: #212529;
+  background-color: black;
   font-size: 1.8rem;
   text-decoration: none;
   color: #f5f5f5;
@@ -78,7 +137,7 @@ nav a img {
 .carousel-cap {
   max-width: 50rem;
   position: absolute;
-  top: 3rem;
+  top: 30%;
   right: 4rem;
 }
 
@@ -94,4 +153,9 @@ nav a img {
   font-weight: 600;
   color: #fdf3cc;
   text-align: justify;
+}
+
+.productImage {
+  width: 80%;
+  height: auto;
 }
