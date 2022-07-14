@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
 /* Color palette */
 spam {
   color: #ba8538;
@@ -30,7 +32,7 @@ Descargar las imagenes del carrusel de mayor width
   font-family: "Raleway", sans-serif;
   color: #fdf3cc;
   font-size: 2.4rem;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
 }
 
 html {
@@ -38,19 +40,24 @@ html {
 }
 
 body {
-  background-image: url("../img/Background.svg");
-  background-repeat: no-repeat;
+  background-image: url("../img/Background2.png");
+  
+  background-repeat: repeat;
   background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  
+  background-attachment: fixed; 
+  
+  
 }
+
+
 
 /* text style*/
 .title1 {
   margin-top: 12rem;
-  font-size: 10rem;
+  font-size: 7rem;
   font-weight: 600;
-  text-align: center;
+  text-align: center;  
 }
 
 .title2 {
@@ -115,18 +122,23 @@ nav {
 
 .NavBarOptions a {
   padding: 0.8rem 1.2rem;
-  background-color: black;
   font-size: 1.8rem;
   text-decoration: none;
   color: #f5f5f5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  transition: all 0.2s;
 }
 
+.NavBarOptions-Active,
 .NavBarOptions a:hover {
   padding: 0.8rem 1.2rem;
   border-radius: 2rem;
   color: #f5f5f5;
   background-color: #ba8538;
 }
+
+
 
 /*Carousel stye*/
 
@@ -158,4 +170,223 @@ nav {
 .productImage {
   width: 80%;
   height: auto;
+}
+
+
+/* Product Page*/
+
+.margTp {
+  margin-top: 250px;
+}
+
+.grass {
+  background-image: url("../img/LeafDecoration3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 300px;
+  height: 450px;
+  left: 0;
+  top: 300px;
+  transform: rotate(5deg);
+  margin-top: 50px;
+}
+
+.corn {
+  background-image: url("../img/CornKernelDecoration3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  position: absolute;
+  width: 300px;
+  height: 450px;
+  right: -2px;
+  top: 2325px;
+}
+
+.circleItem-1 {
+  height: 450px;
+  width: 450px;
+  background-image: url("../img/item1.png");
+  background-size: cover;
+  position: absolute;
+  border-radius: 50%;
+  border: 15px solid #ba8538;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+.circleItem-2 {
+  height: 450px;
+  width: 450px;
+  background-image: url("../img/item2.png");
+  background-size: cover;
+  position: absolute;
+  border-radius: 50%;
+  border: 15px solid #ba8538;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+.circleItem-3 {
+  height: 450px;
+  width: 450px;
+  background-image: url("../img/item3.png");
+  background-size: cover;
+  position: absolute;
+  border-radius: 50%;
+  border: 15px solid #ba8538;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+.circleItem-4 {
+  height: 450px;
+  width: 450px;
+  background-image: url("../img/item4.png");
+  background-size: cover;
+  position: absolute;
+  border-radius: 50%;
+  border: 15px solid #ba8538;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+.title4-r {    
+  font-weight: 600;
+  text-align: right;
+  color: #f2b705;
+  font-size: 48px;
+  line-height: 56px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.title5-r {  
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #8bab6a;
+  text-align: right;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.cardItemContainer-r {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 450px;
+    
+}
+
+.cardItemInfo-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 55rem; 
+  align-content: center; 
+}
+
+.infoCard-r {
+  text-align: right;
+  font-size: 2.5rem; 
+  
+}
+
+.cardItemInfo-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 55rem; 
+  align-content: center; 
+}
+.cardItemContainer-l {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 450px;
+    
+}
+
+.title4-l {     
+  font-weight: 600;
+  text-align: left;
+  color: #f2b705;
+  font-size: 48px;
+  line-height: 56px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.title5-l {
+  margin: 2rem;  
+  font-weight: bold;
+  color: #8bab6a;
+  text-align: left;
+  font-size: 20px;
+  line-height: 23px;
+}
+.infoCard-l {
+  text-align: left;
+  font-size: 2.5rem; 
+  
+}
+
+@media only screen and (max-width: 480px) {
+  .grass {
+    width: 150px;
+    height: 200px;
+    margin-top: 0 ;
+  }
+  .corn {
+    width: 150px;
+
+  }
+  .title1 {
+    font-size: 28px;
+}
+
+.title4-r {
+  font-size: 2.2rem;
+  line-height: 20px;
+}
+
+.title5-r {
+  font-size: 1.2rem;
+}
+
+.infoCard-r {
+  font-size: 14px;
+  line-height: 18px;
+  }
+    
+
+.circleItem-1,
+.circleItem-3 {
+  
+  height: 150px;
+  width: 150px;
+  background-image: url("../img/item1.png");
+  background-size: cover;
+  position: absolute;
+  border-radius: 50%;
+  right: 0px;  
+  margin-right: 40px;
+  border: 8px solid #ba8538;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+  
+}
+
+.cardItemInfo-r {
+  
+  margin-right: 0;
+  width: 100%; 
+  
+}
+
+.cardItemContainer-r {
+  margin-top: 80px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  width: auto;
+}
+
+
+
+
 }
