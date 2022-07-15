@@ -20,14 +20,24 @@
 
 <body>
     <header>
-        <nav>
-            <img class="img-fluid NavBarBg" src="./img/NavbarBackground.svg" alt="background">
-            <div id='home' class="NavBarOptions container d-flex align-items-center justify-content-evenly">
-                <img src="./img/WhiteTransparentLogo.svg">
-                <a href="#home">HOME</a>
-                <a href="#products">PRODUCTOS</a>
-                <a href="#aboutUs">QUIENES SOMOS</a>
-                <a href="#contact">CONTACTO</a>
+
+        <img class="img-fluid NavBarBg w-100" src="./img/NavbarBackground.svg" alt="background">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./img/WhiteTransparentLogo.svg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav NavBarOptions">
+                        <a class="nav-link mx-3" href="#">HOME</a>
+                        <a class="nav-link mx-3" href="./products.html">PRODUCTOS</a>
+                        <a class="nav-link mx-3" href="#aboutUs">QUIENES SOMOS</a>
+                        <a class="nav-link mx-3" href="#contact">CONTACTO</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -68,6 +78,28 @@
         </div>
         <div class="container">
             <h3 id="products" class="title1">PRODUCTOS</h3>
+            <section class="d-flex justify-content-between mt-3">
+                <div class="productsCard d-flex align-items-start">
+                    <img src="./img/item1.svg" alt="product image" class="imgProducto img-fluid">
+                    <p class="secondaryParagraph text-center justify-content-center">AREPA<br>DELGADA</p>
+                </div>
+
+                <div class="productsCard d-flex align-items-start">
+                    <img src="./img/item2.svg" alt="product image" class="imgProducto img-fluid">
+                    <p class="secondaryParagraph text-center justify-content-center">AREPA<br>COCTELERA</p>
+                </div>
+
+                <div class="productsCard d-flex align-items-start">
+                    <img src="./img/item3.svg" alt="product image" class="imgProducto img-fluid">
+                    <p class="secondaryParagraph text-center justify-content-center">AREPA<br>EXTRA DELGADA<br>SOLO PETO
+                    </p>
+                </div>
+
+                <div class="productsCard d-flex align-items-start">
+                    <img src="./img/item4.svg" alt="product image" class="imgProducto img-fluid">
+                    <p class="secondaryParagraph text-center justify-content-center">AREPA<br>GRANDE</p>
+                </div>
+            </section>
 
             <h3 id="aboutUs" class="title1">SOBRE NOSOTROS</h3>
 
@@ -138,8 +170,16 @@
                 elijen, ofreciendo siempre productos hechos con el mejor sabor, amor y el respeto que merecen.</p>
 
             <h3 id="contact" class="title1 text-start">CONTACTO</h3>
-            <!--AGREGAR ICONOS DE REDES SOCIALES-->
+            <div class="contactSection mb-3">
+                <a href="https://www.instagram.com/mr.peto/?hl=es"><img src="./img/WhatsAppLogo.svg"
+                        alt="logo red social"></a>
+                <a href="https://www.facebook.com/MrPetroProducts/"><img src="./img/FacebookLogo.svg"
+                        alt="logo red social"></a>
+                <a href=""><img src="./img/InstagramLogo.svg" alt="logo red social"></a>
+            </div>
         </div>
+
+
     </main>
 
     <footer></footer>
