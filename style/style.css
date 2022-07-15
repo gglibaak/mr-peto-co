@@ -16,8 +16,6 @@ spam {
   color: #8bab6a;
 }
 
-/* ------------------------------------------------------------------------------------------------------ */
-
 /* General style */
 * {
   margin: 0;
@@ -228,7 +226,8 @@ p {
     width: 8rem;
     border-radius: 4rem;
   }
-  .decoration4 {
+  .decoration4,
+  .decoration3 {
     display: none;
   }
 }
@@ -416,7 +415,10 @@ p {
     width: 150px;
   }
   .title1 {
-    font-size: 28px;
+    font-size: 30px;
+  }
+  .title2 {
+    font-size: 26px;
   }
 
   .title4-r {
