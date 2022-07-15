@@ -1,4 +1,6 @@
+/*-- Google Font--*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Raleway:wght@400;600&display=swap");
 /* Color palette */
 spam {
   color: #ba8538;
@@ -86,7 +88,7 @@ p {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 20;
+  z-index: 800;
 }
 .NavBarBg {
   position: absolute;
@@ -106,6 +108,7 @@ p {
   height: 15rem;
   padding: 0.5rem 1rem;
   background-color: transparent;
+  margin: 0 30px;
 }
 
 .NavBarOptions a {
@@ -285,9 +288,10 @@ p {
   background-position: bottom right;
   position: absolute;
   width: 300px;
-  height: 450px;
+  height: 650px;
   right: -2px;
   top: 2325px;
+  z-index:-2;
 }
 
 .circleItem-1 {
@@ -405,14 +409,36 @@ p {
   font-size: 2.5rem;
 }
 
+.navbar-collapse {
+  justify-content: center;
+}
+
+/* Mobile's Display*/
 @media only screen and (max-width: 480px) {
+
+  .contactSection {
+    margin-top: 5rem;
+    position: absolute;
+    z-index: 900;
+  }
+ .carousel {
+  padding-top: 110px;
+ }
+  .navbar-brand img {
+    width: 10rem;
+    height: 10rem;    
+  }
   .grass {
     width: 150px;
     height: 200px;
     margin-top: 0;
   }
-  .corn {
-    width: 150px;
+  .corn {    
+    width: 65px;
+    height: 200px;
+    right: -2px;
+    top: 1800px;
+    
   }
   .title1 {
     font-size: 30px;
@@ -421,32 +447,36 @@ p {
     font-size: 26px;
   }
 
+  /* Cards's Right Side */
+
   .title4-r {
+    margin-top: 30px;
     font-size: 2.2rem;
     line-height: 20px;
+    text-align: center;
   }
 
   .title5-r {
     font-size: 1.2rem;
+    text-align: center;
   }
 
   .infoCard-r {
     font-size: 14px;
     line-height: 18px;
+    text-align: center;
   }
 
   .circleItem-1,
-  .circleItem-3 {
+  .circleItem-2, 
+  .circleItem-3, 
+  .circleItem-4 {
     height: 150px;
-    width: 150px;
-    background-image: url("../img/item1.png");
-    background-size: cover;
-    position: absolute;
-    border-radius: 50%;
+    width: 150px;    
+    position: relative;   
     right: 0px;
-    margin-right: 40px;
-    border: 8px solid #ba8538;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+    margin:0;
+    border: 8px solid #ba8538;    
   }
 
   .cardItemInfo-r {
@@ -455,12 +485,45 @@ p {
   }
 
   .cardItemContainer-r {
-    margin-top: 80px;
-    margin-right: 40px;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 150px;
-    width: auto;
+    height: 400px;
+    width: 100%;
   }
+ /* Cards's Left Side */
+ .title4-l {
+    margin-top: 30px;
+    font-size: 2.2rem;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .title5-l {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .infoCard-l {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .cardItemInfo-l {
+    margin: 0;
+    width: 100%;
+  }
+
+  .cardItemContainer-l {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+  }
+
+  
+ 
 }
