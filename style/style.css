@@ -192,6 +192,7 @@ p {
 
 .contactSection {
   margin-top: 5rem;
+  position: absolute;
 }
 
 .contactSection img {
@@ -227,6 +228,36 @@ p {
     width: 8rem;
     border-radius: 4rem;
   }
+  .decoration4 {
+    display: none;
+  }
+}
+
+/* SVG Decoration*/
+.decoration1 {
+  position: absolute;
+  top: 10rem;
+  z-index: 300;
+  right: 0rem;
+}
+
+.decoration2,
+.decoration4 {
+  position: absolute;
+  z-index: 300;
+  left: 0rem;
+}
+
+.decoration3 {
+  position: absolute;
+  z-index: 300;
+  right: 0rem;
+}
+
+.decoration5 {
+  position: absolute;
+  z-index: 300;
+  right: 0rem;
 }
 
 /* Product Page*/
