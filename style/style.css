@@ -195,6 +195,10 @@ p {
   padding: 10rem 1rem 5rem 1rem;
 }
 
+.container section a {
+  justify-content: space-evenly;
+}
+
 /* Contact section*/
 
 .contactSection {
@@ -223,6 +227,7 @@ p {
 }
 
 .decoration2,
+.decoration2-1,
 .decoration4 {
   position: absolute;
   z-index: 300;
@@ -440,9 +445,6 @@ p {
   }
 }
 @media only screen and (max-width: 576px) {
-  .productsCard img {
-    width: 8rem;
-  }
   .carousel-inner {
     top: 11rem;
   }
@@ -468,11 +470,20 @@ p {
   .decoration1 {
     display: none;
   }
+
+  .container section a {
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+  .productsCard img {
+    width: 10rem;
+  }
+
   .productsCard p {
     font-size: small;
-    height: 25rem;
-    width: 8rem;
-    border-radius: 4rem;
+    height: 22rem;
+    width: 10rem;
+    border-radius: 5rem;
   }
 
   .decoration4,
