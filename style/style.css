@@ -132,6 +132,10 @@ p {
 
 /*Carousel stye*/
 
+.carousel-item img {
+  filter: brightness(75%);
+}
+
 .carousel-item {
   background-color: #212529;
 }
